@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+
+
+        }
+        body{
+            height: 100vh;
+            width: 100wh;
+            display: grid;
+        }
+        
+        .container{
+         
+            background-color: rgb(87, 87, 217);
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+            display: grid;
+            justify-content: center;
+            padding: 5px;
+            justify-items: center;
+            align-items: center;
+            
+        }
+        .box1{
+            height: 220px;
+            width: 300px;
+            background-color: white;
+            grid-template-columns: repeat(3,1fr);
+            padding: 5px;
+            display: grid;
+            
+        }
+        .item{
+
+            border: 5px solid grey;
+        
+
+
+        }
+        .box2{
+            height:220px ;
+            width: 300px;
+            background-color: white;
+            grid-template-columns: repeat(2,1ffr);
+            
+            display: grid;
+            padding: 5px;
+        }
+        #one1{
+            grid-row: 1/3;
+            grid-column: 1/2;
+        }
+        #one2{
+            grid-row: 1/2;
+            grid-column: 2/3;
+        }
+        #one3{
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        .box3{
+            height: 220px;
+            width: 300px;
+            background-color: white;
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
+            padding: 5px;
+        }
+        .box4{
+            height: 220px;
+            width: 300px;
+            background-color: white;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+            padding: 5px;
+        }
+        #four1{
+            grid-row:1/2 ;
+            grid-column: 1/2;
+
+        }
+        #four2{
+            grid-row:2/4 ;
+            grid-column: 1/2;
+
+        }
+        #four3{
+            grid-row:1/3 ;
+            grid-column:2/3 ;
+
+        }      
+         #four4{
+            grid-row:3/4 ;
+            grid-column:2/3 ;
+
+        }      
+         #four5{
+            grid-row:1/2 ;
+            grid-column:3/4 ;
+
+        }       
+         #four6{
+            grid-row:2/4 ;
+            grid-column:3/4 ;
+
+        }
+        .box5{
+            height: 220px;
+            width: 300px;
+            background-color: white;
+            padding: 5px;
+            grid-template-rows: repeat(2,1fr);
+            grid-template-columns:2fr 1fr 1fr 2fr ;
+            display: grid;
+        }
+        #five1{
+            grid-row:1/2 ;
+            grid-column:1/3 ;
+
+        }
+        #five2{
+            grid-row:1/2 ;
+            grid-column:3/5 ;
+
+        }
+        #five3{
+            grid-row: 2/3;
+            grid-column: 1/2;
+
+        }
+        #five4{
+            grid-row:2/3 ;
+            grid-column:2/4;
+
+        }
+        #five5{
+            grid-row:2/3 ;
+            grid-column:4/5 ;
+
+        }
+        .box6{
+            height: 220px;
+            width: 300px;
+            background-color: white;
+            padding: 5px;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);
+            display: grid;
+
+        }
+        #six1{
+            grid-row:1/4 ;
+            grid-column:1/3 ;
+        }
+        #six2{
+            grid-row:4/5 ;
+            grid-column:1/2 ;
+        }
+        #six3{
+            grid-row:4/5 ;
+            grid-column:2/3 ;
+        }
+        #six4{
+            grid-row:1/2 ;
+            grid-column:3/4 ;
+        }
+        #six5{
+            grid-row:2/4 ;
+            grid-column:3/4 ;
+        }
+        #six6{
+            grid-row:4/5 ;
+            grid-column:3/4 ;
+        }
+
+
+        .box7{
+            height: 220px;
+            width: 300px;
+            background-color: white;
+            padding: 5px;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(4,1fr);
+            display: grid;
+
+        }
+        #seven1{
+            grid-row:1/5;
+            grid-column:1/3;
+        }
+        #seven2{
+            grid-row:1/3 ;
+            grid-column:3/5 ;
+        }
+        #seven3{
+            grid-row:3/4 ;
+            grid-column:3/4 ;
+        }
+        #seven4{
+            grid-row: 4/5;
+            grid-column:3/4 ;
+        }
+        #seven5{
+            grid-row: 3/5;
+            grid-column: 4/5;
+        }
+        
+     
+
+        .box8{
+            height: 220px;
+            width: 300px;
+            background-color: white;
+            padding: 5px;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(5,1fr);
+            display: grid;
+
+        }
+        #eight1{
+            grid-row:1/4 ;
+            grid-column:1/3 ;
+        }
+        #eight2{
+            grid-row: 1/3;
+            grid-column: 3/5;
+        }
+
+        #eight3{
+            grid-row: 3/4;
+            grid-column: 3/4;
+        }
+
+        #eight4{
+            grid-row:3/4 ;
+            grid-column:4/5 ;
+        }
+
+        #eight5{
+            grid-row:1/2 ;
+            grid-column:5/6 ;
+        }
+
+        #eight6{
+            grid-row:2/3 ;
+            grid-column:5/6 ;
+        }
+
+        #eight7{
+            grid-row:3/4 ;
+            grid-column:5/6 ;
+        }
+
+        
+        
+        .box9{
+            height: 220px;
+            width: 300px;
+            background-color: white;
+            padding: 5px;
+            grid-template-rows:1fr 1.5fr 1fr;
+            grid-template-columns: repeat(4,1fr);
+            display: grid;
+
+        }
+        #ten1{
+            grid-row:1/2 ;
+            grid-column:1/2 ;
+        }
+        #ten2{
+            grid-row:1/2 ;
+            grid-column:2/3 ;
+        }
+        #ten3{
+            grid-row:1/2 ;
+            grid-column:3/4 ;
+        }
+        #ten4{
+            grid-row:1/2 ;
+            grid-column:4/5 ;
+        }
+        #ten5{
+            grid-row:2/3 ;
+            grid-column: 1/3;
+        }
+        #ten6{
+            grid-row: 2/3;
+            grid-column: 3/5;
+        }
+        #ten7{
+            grid-row:3/4 ;
+            grid-column:1/2 ;
+        }
+        #ten8{
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        #ten9{
+            grid-row: 3/4;
+            grid-column: 3/4;
+        }
+        #ten10{
+            grid-row: 3/4;
+            grid-column: 4/5;
+        }
+
+
+        
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- box1 -->
+        <div class="box1">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <!-- box 2 -->
+        <div class="box2">
+            <div class="item" id="one1"></div>
+            <div class="item" id="one2"></div>
+            <div class="item" id="one3"></div>
+
+        </div>
+
+
+        <!-- box3 -->
+        <div class="box3">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <!-- box4 -->
+        <div class="box4">
+            <div class="item" id="four1"></div>
+            <div class="item" id="four2"></div>
+            <div class="item" id="four3"></div>
+            <div class="item" id="four4"></div>
+            <div class="item" id="four5"></div>
+            <div class="item" id="four6"></div>
+        </div>
+        <!-- box5 -->
+        <div class="box5">
+            <div class="item" id="five1"></div>
+            <div class="item" id="five2"></div>
+            <div class="item" id="five3"></div>
+            <div class="item" id="five4"></div>
+            <div class="item" id="five5"></div>
+        </div>
+        <!-- box6 -->
+        <div class="box6">
+            <div class="item" id="six1"></div>
+            <div class="item" id="six2"></div>
+            <div class="item" id="six3"></div>
+            <div class="item" id="six4"></div>
+            <div class="item" id="six5"></div>
+            <div class="item" id="six6"></div>
+        </div>
+        <!-- box7 -->
+        <div class="box7">
+            <div class="item" id="seven1"></div>
+            <div class="item" id="seven2"></div>
+            <div class="item" id="seven3"></div>
+            <div class="item" id="seven4"></div>
+            <div class="item" id="seven5"></div>
+            
+        </div>
+        <!-- box8 -->
+        <div class="box8">
+            <div class="item" id="eight1"></div>
+            <div class="item" id="eight2"></div>
+            <div class="item" id="eight3"></div>
+            <div class="item" id="eight4"></div>
+            <div class="item" id="eight5"></div>
+            <div class="item" id="eight6"></div>
+            <div class="item" id="eight8"></div>
+        </div>
+        <!-- box9 -->
+        <div class="box9">
+            <div class="item" id="ten1"></div>
+            <div class="item" id="ten2"></div>
+            <div class="item" id="ten3"></div>
+            <div class="item" id="ten4"></div>
+            <div class="item" id="ten5"></div>
+            <div class="item" id="ten6"></div>
+            <div class="item" id="ten7"></div>
+            <div class="item" id="ten8"></div>
+            <div class="item" id="ten9"></div>
+            <div class="item" id="ten10"></div>
+        </div>
+    </div>
+</body>
+</html>
