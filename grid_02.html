@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 500px;
+            width: 500px;
+            display: grid;
+               /* grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr); */
+            grid-template-columns:2fr 1fr 1fr;
+                   /* 500px=4fr
+            1fr=500/4 1fr=125px
+            250px 125px 125px */
+            grid-template-rows:2fr 1fr;
+                    /* 500/3= 1fr=167px
+            row-1: 334px
+            row-2: 167px */
+
+        }
+        .item{
+            border: 2px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="box1">box1</div>
+        <div class="item" id="box2">box2</div>
+        <div class="item" id="box3">box3</div>
+        <div class="item" id="box4">box4</div>
+        <div class="item" id="box5">box5</div>
+        <div class="item" id="box6">box6</div>
+    </div>
+</body>
+</html>
