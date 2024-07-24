@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* general sibling selector */
+        div~p{
+            color: red;
+        }
+        /* adjecent sibling selector */
+        div+p{
+            background-color: aqua;
+        }
+        /* child selector */
+        div>h3{
+            color: blue;
+        }
+        /* descedant celector */
+        div footer p{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>this is paragraph 1</p>
+        <p>this is paragraph 2 </p>
+        <p>this is  paragraph 3</p>
+    </div>
+    <p>this is outside para </p>
+    <p>this is another outside para</p>
+    <h3>ths is h3</h3>
+    <hr>
+    <!-- child selector  -->
+    <div>
+        <h3>tis is heading 1 </h3>
+        <h3>this is heading 2</h3>
+        <h3>this is heading 3</h3>
+    </div>
+    <div>
+        <footer>
+            <p>
+                para1
+            </p>
+            <p>
+                para2
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
