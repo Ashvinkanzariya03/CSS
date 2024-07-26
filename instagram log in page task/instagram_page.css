@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(instagram_backgraund\ imge.webp);
+    background-repeat: no-repeat ;
+    background-size: 100% 800px ;
+    position: relative;
+    left:550px;
+    top: 60px;
+    
+}
+img{
+    height: 80px;
+    position: relative;
+    top: 60px;
+}
+.div1{
+    
+    height: 450px;
+    width: 25%;
+    background-color: white;
+    color: black;
+   
+    text-align: center;
+    
+}
+.div2{
+    height: 50px;
+    width: 25%;
+    background-color:white;
+    position: relative;
+    top: 5px;
+    text-align:center;
+    padding-top: 15px;
+}
+.input1{
+    background-color: rgb(110, 110, 225);
+    border-radius: 8px;
+
+}
+.xyz{
+    margin-top: 10px;
+}
+.xyz:before{
+    content: '';
+    display: block;
+    width: 140px;
+    height: 1px;
+    background:black;
+    position: absolute;
+    left: 30px;
+    top: 11px;
+
+}
+.xyz:after{
+    content: '';
+    display: block;
+    width: 140px;
+    height: 1px;
+    background:black;
+    position: absolute;
+    right: 30px;
+    top: 11px;
+
+}
+.xy{
+    margin-top: 20px;
+}
+.forgot{
+    margin-top: 20px;
+}
